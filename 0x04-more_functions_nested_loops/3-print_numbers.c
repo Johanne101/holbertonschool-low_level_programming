@@ -5,9 +5,9 @@
  */
 void print_numbers(void)
 {
-	int perrito_lindo = 0;
+	int p = 0;
 
-	for (perrito_lindo = '0'; perrito_lindo <= '9'; perrito_lindo++)
-		_putchar(perrito_lindo);
+	for (p = '0'; p <= '9'; p++)
+		_putchar(p);
 	_putchar('\n');
 }
