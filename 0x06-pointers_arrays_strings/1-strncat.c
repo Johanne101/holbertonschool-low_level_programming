@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
  * _strncat - function appends the 'src' string to the dest string
- * @src:
- * @dest:
- * Retturn: a pointer to the resultin string dest
+ * @src: pointer for indx2
+ * @dest: pointer for indx
+ * @n: is an integer for the question
+ * Return: a pointer to the resultin string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
