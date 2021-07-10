@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 		{
 			return (0);
 		}
-		else 
+		else
 		{
 			return (sqrt_function(n, root));
 		}
@@ -24,8 +24,8 @@ int _sqrt_recursion(int n)
 }
 /**
  * sqrt_function - This function will find the natuiral square root of a number
- * @sum - the number to find the square root of.
- * @root - This will test the root.
+ * @sum: parameter number to find the square root of.
+ * @root: This parameter will test the root.
  * Return: The natural square root number.
  *
  */
