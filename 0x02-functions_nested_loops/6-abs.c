@@ -1,9 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * _abs: This function computes the absolute value of an integer.
+ * _abs - This function computes the absolute value of an integer.
  * @n: absolute integer
- * Returns: The absolute number.
+ * Return: The absolute number.
  */
 int _abs(int n)
 {
