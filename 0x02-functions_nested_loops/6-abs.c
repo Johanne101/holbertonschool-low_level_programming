@@ -2,9 +2,7 @@
 #include <stdio.h>
 /**
  * _abs - This function computes the absolute value of an integer.
- * 
  * Returns: The absolute number.
- *
  */
 int _abs(int n)
 {
