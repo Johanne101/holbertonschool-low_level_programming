@@ -8,10 +8,10 @@
  * or returns -1 and prints - if 'n' is less than zero.
  *
  */
-int print_sign(int n)
+int _abs(int n)
 {
-	if (n <=0)
-		return (1);
+	if (n >= 0)
+		return (n);
 	else
 		return (n * -1);
 }
