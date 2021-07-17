@@ -1,11 +1,9 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- * print_sign - This function prints the sign of a number.
+ * _abs - This function computes the absolute value of an integer.
  * 
- * Returns: 1 and prints + if 'n' is greater than zero,
- * otherwise return 0 and prints 0 if 'n' is zero,
- * or returns -1 and prints - if 'n' is less than zero.
+ * Returns: The absolute number.
  *
  */
 int _abs(int n)
