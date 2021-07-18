@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  * main - program print the lowercase alphabet.
  * @:
  * Return: Always 0.
