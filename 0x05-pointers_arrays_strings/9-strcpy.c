@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcpy - Copy the string pointing to 'src', 
+ * _strcpy - Copy the string pointing to 'src',
  * to the pointed destination 'dest'.
  *
  * @dest: the address to be copied into.
