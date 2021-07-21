@@ -39,7 +39,8 @@ char *_strcopy(char *dest, char *src)
  * new_dog - Creats a new Doge coin.
  * @name: Dog's name.
  * @age: Doge's age.
- * @owner Dog's owner.
+ * @owner: Dog's owner.
+ * Return: Doge
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
