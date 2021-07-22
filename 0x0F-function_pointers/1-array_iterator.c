@@ -2,9 +2,9 @@
 
 /**
  * array_iterator - Function to search for an integer.
- * @array: contains total element numbers.
- * @size: is the size of string.
- * @action: pointer to function to use.
+ * @array: array of strings.
+ * @size: is the size *array.
+ * @action: execute pointed function.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
