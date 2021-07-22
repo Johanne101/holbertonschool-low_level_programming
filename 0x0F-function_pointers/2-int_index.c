@@ -1,11 +1,14 @@
 #include "function_pointers.h"
 
-/*
+/**
  * int_index - Function searches for an int.
  * @array: Array of strings to find element.
  * @size: contains total number elements.
  * @cmp: Contains 1st elemt to return.
+ *
+ * Return: box with cmp element.
  */
+
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int box = 0;
