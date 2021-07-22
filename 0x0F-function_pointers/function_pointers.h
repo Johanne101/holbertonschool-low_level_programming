@@ -1,9 +1,7 @@
 #ifndef FUNCTION_POINTERS_H
 #define FUNCTION_POINTERS_H
 
-/**
- * file: function pointers header.
- */
+/* function pointers header file*/
 
 #include <stdlib.h>
 
