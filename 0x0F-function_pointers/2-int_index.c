@@ -1,23 +1,25 @@
 #include "function_pointers.h"
 
-/**
- * array_iterator - Function to search for an integer.
- * @array: contains total element numbers.
- * @size: is the size of string.
- * @action: pointer to function to use.
+/*
+ * int_index - Function searches for an int.
+ * @array: Array of strings to find element.
+ * @size: contains total number elements.
+ * @cmp: Contains 1st elemt to return.
  */
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	unsigned int x = 0;
+	int box = 0;
 
-	if (array == NULL || size == '\0')
-		return;
+	if (array == NULL || cmp == NULL)
+		return (-1);
 
-	if (action == NULL)
-		return;
+	if (size <= 0)
+		return (-1);
 
-	for ( ; x < size; x++)
+	for ( ; box < size; box++)
 	{
-		(*action)(array[x]);
+		if (cmp(array[box]) == 1)
+			return (box);
 	}
+	return (-1);
 }
