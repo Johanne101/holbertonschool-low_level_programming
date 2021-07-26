@@ -3,17 +3,17 @@
 /**
  * main - Prints sigle digits from 0 - 9.
  *
- * Return: 0
+ * Return: 0 Success
  */
 int main(void)
 {
-	int x = 0;
+	int x = '0';
 
-	while (x <= 9)
+	while (x <= '9')
 	{
-		putchar (x);
+		putchar(x);
 		x++;
 	}
 	putchar ('\n');
-	return (1);
+	return (0);
 }
