@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  * add_node_end - Function adds a new node at end of a list_t list.
  * @head: Beginning of nodes with elements.
  * @str: duplicate node with string copy value/elements.
