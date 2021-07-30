@@ -1,8 +1,7 @@
 #include "lists.h"
 
 /**
- *
- *
+ * premain - prints string before the main function is executed.
  */
 void __attribute__ ((constructor)) premain(void)
 {
