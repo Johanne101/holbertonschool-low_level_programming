@@ -41,5 +41,5 @@ list_t *add_node_end(list_t **head, const char *str)
 	new_node->str = dup_node;
 	new_node->len = len;
 	new_node->next = NULL;
-	return (*head);
+	return (new_node);
 }
