@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint_end - Function that adds a new node at the end of a linked list.
- * @head - Pointer of the head node address of a linked list.
+ * @head: Pointer of the head node address of a linked list.
  * @n: Contains the node with integer elements.
  *
  * Return: The address of the new element, or NULL if it failed.
