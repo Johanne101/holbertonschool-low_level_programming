@@ -2,7 +2,7 @@
 
 /**
  * print_listint - Prints all elements of a linked_t lists.
- * h: pointed string containing elements.
+ * @h: pointed string containing elements.
  * Return: Number of nodes.
  */
 size_t print_listint(const listint_t *h)
