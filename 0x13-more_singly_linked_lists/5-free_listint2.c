@@ -6,9 +6,10 @@
  */
 void free_listint2(listint_t **head)
 {
-	listint_t *tmp_node, *cp_node = *head;
+	listint_t *tmp_node, *cp_node;
+	cp_node = *head;
 
-	while (cp_node != NULL)
+	while (cp_node)
 	{
 		tmp_node = cp_node->next;
 		free(cp_node);
