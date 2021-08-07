@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * get_bit - Function returns value of a bit at a given index.
  * @n: holds the value string.
  * @index: location to retrieve the value.
@@ -9,10 +9,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index != 0)
-		return (1);
-	else return
-	{
-		(((1 << index) - 1) & (n >> (index - 1)));
-	}
+	if (index >= sizeof(long int) * 8)
+		return (-1);
+	return ((n >> index) & 1);
 }
