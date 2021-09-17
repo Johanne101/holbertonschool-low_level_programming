@@ -3,6 +3,7 @@
 /**
  * malloc_checked - function that allocates memory using malloc
  * @b: adress to allocate memory.
+ * Return: pointer
  */
 void *malloc_checked(unsigned int b)
 {
