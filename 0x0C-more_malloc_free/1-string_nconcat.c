@@ -1,58 +1,63 @@
 #include "main.h"
 unsigned int _strlen(char *s);
 /**
- * *string_nconcat - adds two strings.
- * @s1: string 1.
- * @s2: string 2.
- * @n: number of bytes.
- * Return: pointer to newly allocated space in memory.
+ * string_nconcat - function that concatenates two strings.
+ * @s1: First string
+ * @s2: Second string
+ * @n: bytes to include of s2
+ * Return: NULL if fail, else pointer to malloc memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-    unsigned int length, idx;
-    char *new;
+	char *p;
+	unsigned int str1, str2, l1, l2;
 
-    if (s1 == NULL)
-        s1 = "";
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	str1 = _strlen(s1);
+	str2 = _strlen(s2);
 
-    if (s2 == NULL)
-        s2 = "";
+	if (n < str2)
+	{
+		str1 += n;
+	}
+	else
+		str1 += str2;
+	p = malloc(sizeof(char) * str1 + 1);
 
-    length = _strlen(s1);
+	if (p == NULL)
+	{
+		return (NULL);
+	}
 
-    if (n < _strlen(s2))
-        length += n;
-    else
-        length += _strlen(s2);
-
-    new = malloc(sizeof(char) * length + 1);
-    if (new == NULL)
-        return (NULL);
-
-    for (length = 0; s1[length] != '\0'; length++)
-        new[length] = s1[length];
-    for (idx = 0; s2[idx] != '\0' && idx < n ; idx++)
-    {
-        new[length] = s2[idx];
-        length++;
-    }
-    new[length] = '\0';
-    return (new);
+	for (l1 = 0; s1[l1] != '\0'; l1++)
+	{
+		p[l1] = s1[l1];
+	}
+	for  (l2 = 0; s2[l2] != '\0' && l2 < n; l1++, l2++)
+	{
+		p[l1] = s2[l2];
+	}
+	p[l1] = '\0';
+	return (p);
 }
-
 /**
- * _strlen - finds lengths of string
- * @s: string
- * Return: 0
+ * _strlen - return length of a string
+ * @s: pointer
+ * Return:  length of string
  */
 unsigned int _strlen(char *s)
 {
-    unsigned int size;
+	unsigned int str;
 
-    for (size = 0; s[size] != '\0'; size++)
-    ;
-
-    return (size);
+	for (str = 0; s[str] != '\0'; str++)
+		;
+	return (str);
 }
-
