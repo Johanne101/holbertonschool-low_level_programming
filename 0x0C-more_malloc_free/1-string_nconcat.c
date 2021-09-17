@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 		str1 += str2;
-	p = malloc(str1 + n + 1);
+	p = malloc(sizeof(char) * str1 + 1);
 
 	if (p == NULL)
 	{
