@@ -1,4 +1,3 @@
 #!/bin/bash
-gcc -c *c
-ar rc liball.a *o
-randlib liball.a
+gcc -c *.c
+ar rc libmy.a *.o
