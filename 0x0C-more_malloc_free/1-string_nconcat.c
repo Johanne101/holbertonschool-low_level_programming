@@ -1,5 +1,5 @@
 #include "main.h"
-int _strlen(char *s);
+unsigned int _strlen(char *s);
 /**
  * string_nconcat - function that concatenates two strings.
  * @s1: First string
@@ -53,9 +53,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
  * @s: pointer
  * Return:  length of string
  */
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int str;
+	unsigned int str;
 
 	for (str = 0; s[str] != '\0'; str++)
 		;
