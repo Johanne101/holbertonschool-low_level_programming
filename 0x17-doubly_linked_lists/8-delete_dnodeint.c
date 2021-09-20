@@ -7,10 +7,10 @@
  *
  * Return: 1 if successful, -1 if failed.
  */
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	unsigned int data;
-	listint_t *node, *ref_node = *head;
+	dlistint_t *node, *ref_node = *head;
 
 	if (*head == NULL)
 		return (-1);
