@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - Function adds a new node at the beginning of a linked list.
+ * add_dnodeint - Function adds a new node at the beginning of a linked list.
  * @head: contains string elements.
  * @n: number of elements.
  *
@@ -13,7 +13,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	node = malloc(sizeof(dlistint_t));
 	if (node == NULL)
+	{
+		free(node);
 		return (NULL);
+	}
 	node->n = n;
 	node->next = *head;
 	node->prev = NULL;
