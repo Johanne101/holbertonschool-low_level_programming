@@ -9,11 +9,15 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *new_node = NULL;
-	hash_node_t *helper_node = NULL;
+	struct hash_node_s *new_node;
+	new_node->key = *key;
+	new_node->value = *value;
+	/*hash_node_t *helper_node = NULL;*/
 	
 	if (ht == NULL || key == NULL)
 		return (0);
+	/* Step 1: Create a Data Item, Set up the Key and the Value data structure */
+	new_node = (struct hash_node_s*)malloc(sizeof(struct hash_node_s));
 
-
+	return (0);
 }
