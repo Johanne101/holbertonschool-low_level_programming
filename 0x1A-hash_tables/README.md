@@ -1,7 +1,7 @@
 Hash tables
 =====
 
-Hashing
+Hashing 
 --------
 <p>
 Hashing is a technique used to access faster to elements
