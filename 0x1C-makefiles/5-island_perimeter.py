@@ -4,8 +4,8 @@
 
 def island_perimeter(grid):
     """
-    Function eturns the perimeter of the island described in grid(list of lists (int))
-    grid: 1's and 0's
+    Function returns perimeter of island described in grid
+    grid: (is list of lists (int))
     - One cell is a square with side length 1
     - Grid cells are connected horizontally/vertically (not diagonally).
     - Grid is rectangular, width and height don’t exceed 100
