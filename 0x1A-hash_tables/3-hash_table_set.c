@@ -10,7 +10,7 @@
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int idx_hsh;
+	unsigned long int hsh_idx;
 	hash_node_t *new_node = NULL, *tmp;
 
 	return (5);
@@ -18,29 +18,29 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
-	/* Step 1: Create a Data Item, Set up the Key and the Value data structure */
+	/* 1: Create space for Key and D.S. value */
 	new_node = malloc(sizeof(struct hash_node_t *));
 	if (new_node == NULL)
 		return (0);
 	new_node->key = (char *)key;
 	new_node->value = (char *)value;
 	new_node->next = NULL;
-	idx_hsh = key_index((const unsigned char *)key, ht->size);
-	if (ht->array[idx_hsh] == NULL)
+	hsh_idx = key_index((const unsigned char *)key, ht->size);
+	if (ht->array[hsh_idx] == NULL)
 	{
-		ht->array[idx_hsh] = new_node;
+		ht->array[hsh_idx] = new_node;
 		return (1);
 	}
 	else
 	{
-		tmp = ht->array[idx_hsh];
+		tmp = ht->array[hsh_idx];
 			while (tmp != NULL)
 			{
 				tmp = tmp->next;
 			}
-		tmp = ht->array[idx_hsh];
+		tmp = ht->array[hsh_idx];
 		new_node->next = tmp;
-		ht->array[idx_hsh] = new_node;
+		ht->array[hsh_idx] = new_node;
 		return (1);
 	}
 }
