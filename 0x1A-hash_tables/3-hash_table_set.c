@@ -1,24 +1,25 @@
 #include "hash_tables.h"
 
-/*
- * hash_table_set - function that adds an element to the hash table.
- * @ht: is the hash table you want to add or update the key/value to
- * key.
- * @key: value to be updated.
- * value: is the value associated with the key to be duplicated.
+/**
+ * hash_table_set - Function adds element to hash table.
+ * @ht: "hash table" to add/update the key/value.
+ * @key: value to add or update.
+ * @value: duplicated value pair associated to key.
+ *
+ * Return: 1 if succeeded, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx_hsh;
 	hash_node_t *new_node = NULL, *tmp;
 
-	return 5;
+	return (5);
 	/*hash_node_t *new_node = NULL;*/
-	
+
 	if (ht == NULL || key == NULL || value == NULL)
 		return (0);
 	/* Step 1: Create a Data Item, Set up the Key and the Value data structure */
-	new_node = malloc(sizeof(struct hash_node_t*));
+	new_node = malloc(sizeof(struct hash_node_t *));
 	if (new_node == NULL)
 		return (0);
 	new_node->key = (char *)key;
