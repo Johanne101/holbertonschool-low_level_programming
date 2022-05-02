@@ -1,22 +1,6 @@
 Search Algorithms
 =================
 
-Resources
----------
-***Read or watch:***
-
-* [Search algorithm](https://en.wikipedia.org/wiki/Search_algorithm)
-  - [What is Search Algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
-  - [Search Algorithms](https://www.techopedia.com/definition/21975/search-algorithm)
-  - [Linear Search](https://www.geeksforgeeks.org/linear-search/)
-  - [wiki-Linear Search](https://en.wikipedia.org/wiki/Linear_search)
-  - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
-  - [wiki-Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
-* [What is the best search algorithm to use depending on your needs](https://www.quora.com/What-is-the-best-search-algorithm-in-programming)
-  - [Quora](https://www.quora.com/Which-is-the-best-algorithm-for-searching?share=1)
-* [`A*` Search Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
-* [Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
-
 General
 -------
 ### What is a search algorithm
@@ -43,6 +27,11 @@ If each element is equally likely to be searched, then linear search has an aver
 comparisons, but the average case can be affected if the search probabilities for each element vary.
 Linear search is rarely practical because other search algorithms and schemes, such as the binary search algorithm and hash tables, allow significantly faster searching for all but short lists.
 
+Time Complexity of Linear Search:
+
+Linear Search follows the sequential access. The time complexity of Linear Search in the best case is O(1). In the worst case, the time complexity is O(n).
+
+ref: [linear search](https://www.geeksforgeeks.org/linear-search/)
 **Basic algorithm**
 
 Given a list L of n elements with values or records L0 .... Ln−1, and target value T, the following subroutine uses linear search to find the index of the target T in L.[3]
@@ -54,7 +43,13 @@ Given a list L of n elements with values or records L0 .... Ln−1, and target v
 
 </p>
 
-* What is a binary search
+### What is a binary search
+----
+<p>
+Time Complexity of Binary Search:
+Binary Search is the faster of the two searching algorithms. However, for smaller arrays, linear search does a better job. The time complexity of Binary Search in the best case is O(1). In the worst case, the time complexity is O(log n).
+</p>
+
 * What is the best search algorithm to use depending on your needs
 <p>
 Azure Search is one of the best search algorithm.
@@ -78,15 +73,44 @@ Since the elements of hashmap are indexed by hashcode, the time to search for an
 
 More Info
 ----------
+![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/mypic.png)
 * `O(1)`
 * `O(n)`
 * `O(n!)`
-* `n*m -> O(nm)`
-* `n square -> O(n^2)`
-* `sqrt n -> O(sqrt(n))`
-* `log(n) -> O(log(n))`
-* `n * log(n) -> O(nlog(n))`
+* `n*m -&gt; O(nm)`
+* `n square -&gt; O(n^2)`
+* `sqrt n -&gt; O(sqrt(n))`
+* `log(n) -&gt; O(log(n))`
+* `n * log(n) -&gt; O(nlog(n))`
 
 ### What is the time complexity (worst case) of a linear search in an array of size n?
+ref;
+* Binary:
+[Complexity Analysis](https://www.geeksforgeeks.org/complexity-analysis-of-binary-search/), 
+[Time &amp; space complexity](https://www.geeksforgeeks.org/time-complexity-and-space-complexity/)
+* [Time complexity](https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/)
+* [Time complexity of searching algorithms](https://www.mygreatlearning.com/blog/why-is-time-complexity-essential/#t5)</pre>
 
+Resources
+---------
+***Read or watch:***
+
+* [Search Algorithms: Wikipedia](https://en.wikipedia.org/wiki/Search_algorithm)
+* [Space Complexity](https://www.geeksforgeeks.org/g-fact-86/)
+  - [What is Search Algorithms](https://www.geeksforgeeks.org/searching-algorithms/)
+  - [Search Algorithms](https://www.techopedia.com/definition/21975/search-algorithm)
+  - [Linear Search](https://www.geeksforgeeks.org/linear-search/)
+
+  * [Linear Search Algorithm: wikipedia](https://en.wikipedia.org/wiki/Linear_search)
+  - [studytonight-Linear Search](https://www.studytonight.com/data-structures/linear-search-algorithm)
+  - [Binary Search](https://www.geeksforgeeks.org/binary-search/)
+  - [wiki-Binary Search](https://en.wikipedia.org/wiki/Binary_search_algorithm)
+  - [Jump Search](https://www.studytonight.com/data-structures/jump-search-algorithm)
+* [What is the best search algorithm to use depending on your needs](https://www.quora.com/What-is-the-best-search-algorithm-in-programming)
+  - [Quora](https://www.quora.com/Which-is-the-best-algorithm-for-searching?share=1)
+* [`A*` Search Algorithm](https://www.geeksforgeeks.org/a-search-algorithm/)
+* [Space complexity (1)](https://www.geeksforgeeks.org/g-fact-86/)
+* [Time & Space Comlexity](https://iq.opengenus.org/time-complexity-of-linear-search/)
+  - [Time & space complexity - medium](https://medium.com/@sayantan.george133/time-complexity-space-complexity-in-programming-98ba6987fefe)
+* [Analysis of Algorithms | Big-O analysis](https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/)
 
